@@ -1,0 +1,9 @@
+
+> guide-on-phone-backend@1.0.0 dev
+> tsx watch src/server.ts
+
+[INFO] MongoDB connected
+[INFO] Backend listening on http://localhost:5000
+::1 - - [09/Mar/2026:05:18:51 +0000] "GET /health HTTP/1.1" 200 46 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.7920"
+::1 - - [09/Mar/2026:05:19:04 +0000] "GET /health HTTP/1.1" 200 46 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.7920"
+::1 - - [09/Mar/2026:05:19:16 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 813 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.7920"

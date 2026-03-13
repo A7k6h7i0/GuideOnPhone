@@ -1,0 +1,42 @@
+ ⚠ Port 3000 is in use, trying 3001 instead.
+ ⚠ Port 3001 is in use, trying 3002 instead.
+ ⨯ ./src/app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/app/globals.css
+Error: Cannot find module 'postcss-selector-parser'
+Require stack:
+- C:\guide-on-phone\node_modules\postcss-nested\index.js
+- C:\guide-on-phone\frontend\node_modules\tailwindcss\lib\util\parseObjectStyles.js
+- C:\guide-on-phone\frontend\node_modules\tailwindcss\lib\lib\setupContextUtils.js
+- C:\guide-on-phone\frontend\node_modules\tailwindcss\lib\lib\setupTrackingContext.js
+- C:\guide-on-phone\frontend\node_modules\tailwindcss\lib\plugin.js
+- C:\guide-on-phone\frontend\node_modules\tailwindcss\lib\index.js
+- C:\guide-on-phone\frontend\node_modules\next\dist\build\webpack\config\blocks\css\plugins.js
+- C:\guide-on-phone\frontend\node_modules\next\dist\build\webpack\config\blocks\css\index.js
+- C:\guide-on-phone\frontend\node_modules\next\dist\build\webpack\config\index.js
+- C:\guide-on-phone\frontend\node_modules\next\dist\build\webpack-config.js
+- C:\guide-on-phone\frontend\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\guide-on-phone\frontend\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\guide-on-phone\frontend\node_modules\next\dist\server\lib\router-server.js
+- C:\guide-on-phone\frontend\node_modules\next\dist\server\lib\start-server.js
+Import trace for requested module:
+./src/app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/app/globals.css
+./src/app/globals.css
+ ⨯ ./src/app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/app/globals.css
+Error: Cannot find module 'postcss-selector-parser'
+Require stack:
+- C:\guide-on-phone\node_modules\postcss-nested\index.js
+- C:\guide-on-phone\frontend\node_modules\tailwindcss\lib\util\parseObjectStyles.js
+- C:\guide-on-phone\frontend\node_modules\tailwindcss\lib\lib\setupContextUtils.js
+- C:\guide-on-phone\frontend\node_modules\tailwindcss\lib\lib\setupTrackingContext.js
+- C:\guide-on-phone\frontend\node_modules\tailwindcss\lib\plugin.js
+- C:\guide-on-phone\frontend\node_modules\tailwindcss\lib\index.js
+- C:\guide-on-phone\frontend\node_modules\next\dist\build\webpack\config\blocks\css\plugins.js
+- C:\guide-on-phone\frontend\node_modules\next\dist\build\webpack\config\blocks\css\index.js
+- C:\guide-on-phone\frontend\node_modules\next\dist\build\webpack\config\index.js
+- C:\guide-on-phone\frontend\node_modules\next\dist\build\webpack-config.js
+- C:\guide-on-phone\frontend\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- C:\guide-on-phone\frontend\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- C:\guide-on-phone\frontend\node_modules\next\dist\server\lib\router-server.js
+- C:\guide-on-phone\frontend\node_modules\next\dist\server\lib\start-server.js
+Import trace for requested module:
+./src/app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/app/globals.css
+./src/app/globals.css

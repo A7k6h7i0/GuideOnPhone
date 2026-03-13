@@ -1,0 +1,16 @@
+
+> guide-on-phone-frontend@1.0.0 dev
+> next dev
+
+  ▲ Next.js 14.2.15
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+  - Experiments (use with caution):
+    · typedRoutes
+
+ ✓ Starting...
+ ✓ Ready in 2.5s
+ ○ Compiling /register ...
+ ✓ Compiled /register in 16.3s (709 modules)
+ GET /register 200 in 17107ms
+[?25h
