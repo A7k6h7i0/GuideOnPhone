@@ -479,7 +479,7 @@ export default function AgentProfilePage() {
             </Button>
           </div>
         )}
-        {stepCompletion.step6 && profile?.status === "APPROVED" && (
+        {stepCompletion.step6 && result?.status === "APPROVED" && (
           <div className="rounded-lg bg-green-50 p-4 text-center">
             <div className="mb-2 text-4xl">🎉</div>
             <p className="font-semibold text-green-800">Congratulations! You're approved!</p>
@@ -498,3 +498,4 @@ export default function AgentProfilePage() {
     </div>
   );
 }
+

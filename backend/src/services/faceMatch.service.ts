@@ -1,7 +1,6 @@
 import * as faceapi from "@vladmandic/face-api";
 import * as fs from "fs/promises";
 import * as path from "path";
-import { Blob } from "buffer";
 import { logger } from "../config/logger.js";
 
 // Path to store the AI models
@@ -183,4 +182,5 @@ export const getFaceLandmarks = async (
     return null;
   }
 };
+
 
