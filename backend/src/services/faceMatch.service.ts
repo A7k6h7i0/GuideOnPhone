@@ -1,6 +1,7 @@
 import * as faceapi from "@vladmandic/face-api";
 import * as fs from "fs/promises";
 import * as path from "path";
+import { Blob } from "buffer";
 import { logger } from "../config/logger.js";
 
 // Path to store the AI models
@@ -62,12 +63,8 @@ export const compareFaces = async (
     ]);
 
     // Create HTMLImageElement-like objects from buffers
-    const selfieImage = await faceapi.bufferToImage(
-      Buffer.from(selfieBuffer)
-    );
-    const referenceImage = await faceapi.bufferToImage(
-      Buffer.from(referenceBuffer)
-    );
+    const selfieImage = await faceapi.bufferToImage(new Blob([selfieBuffer]));
+    const referenceImage = await faceapi.bufferToImage(new Blob([referenceBuffer]));
 
     // Detect faces with landmarks and descriptors
     const selfieDetections = await faceapi
@@ -139,7 +136,7 @@ export const detectFace = async (imagePath: string): Promise<boolean> => {
 
   try {
     const imageBuffer = await fs.readFile(imagePath);
-    const image = await faceapi.bufferToImage(Buffer.from(imageBuffer));
+    const image = await faceapi.bufferToImage(new Blob([imageBuffer]));
 
     const detections = await faceapi
       .detectAllFaces(image)
@@ -168,7 +165,7 @@ export const getFaceLandmarks = async (
 
   try {
     const imageBuffer = await fs.readFile(imagePath);
-    const image = await faceapi.bufferToImage(Buffer.from(imageBuffer));
+    const image = await faceapi.bufferToImage(new Blob([imageBuffer]));
 
     const detections = await faceapi
       .detectAllFaces(image)
@@ -186,3 +183,4 @@ export const getFaceLandmarks = async (
     return null;
   }
 };
+
